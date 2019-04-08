@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="My Life Logger">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calori Counter</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="My Log">
+  <meta name="theme-color" content="#303F9F">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="My Log">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+
+  <!-- Tile icon for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="msapplication-navbutton-color" content="#303F9F">
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-orange.min.css">
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Calorie Counter</span>
+      </div>
+      <!-- Tabs -->
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a id = "new-log-tab" href="#new-log" class="mdl-layout__tab is-active">New Log</a>
+        <a id= "all-logs-tab" href="#all-logs" class="mdl-layout__tab">All Logs</a>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <section class="mdl-layout__tab-panel is-active" id="new-log">
+        <div class="page-content">
+          
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col"></div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="one-log-description">
+                <label class="mdl-textfield__label" for="one-log-field">What did you eat?</label>
+              </div>
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="one-log-count">
+                <label class="mdl-textfield__label" for="one-log-field">How many calories?</label>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col"></div>
+          </div>
+
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col"></div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="one-log-button"><i class="material-icons">add</i>
+              </button>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col"></div>
+          </div>
+            
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="all-logs">
+        <div class="page-content">
+
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--1-col">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" id="back-button">
+                <i class="material-icons">arrow_back</i>
+              </button>
+            </div>
+            <div class="mdl-cell mdl-cell--2-col" id="days-date"></div>
+            <div class="mdl-cell mdl-cell--1-col">
+              <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" id="forward-button">
+                <i class="material-icons">arrow_forward</i>
+              </button>
+            </div>
+          </div>
+
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col"></div>
+            <div class="mdl-cell mdl-cell--4-col" id="all-logs-grid"></div>
+            <div class="mdl-cell mdl-cell--4-col"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
