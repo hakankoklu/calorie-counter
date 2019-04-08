@@ -149,13 +149,13 @@ function renderDay(date, calories) {
     timeHead.appendChild(document.createTextNode('Time'));
 
     var logHead = document.createElement('th');
-    logHead.appendChild(document.createTextNode('Log'));
+    logHead.appendChild(document.createTextNode('Food'));
 
     var countHead = document.createElement('th');
     countHead.appendChild(document.createTextNode('Count'));
 
-    row.appendChild(logHead);
     row.appendChild(timeHead);
+    row.appendChild(logHead);
     row.appendChild(countHead);
 
     tableBody.appendChild(row);
