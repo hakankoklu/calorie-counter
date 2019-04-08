@@ -79,7 +79,7 @@ function getTimeString(timestamp) {
     var hour = padZero(timestamp.getHours().toString());
     var minute = padZero(timestamp.getMinutes().toString());
     var second = padZero(timestamp.getSeconds().toString());
-    return hour + ":" + minute + ":" + day
+    return hour + ":" + minute + ":" + second
 }
 
 function padZero(num) {
