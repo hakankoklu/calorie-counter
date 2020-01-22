@@ -89,9 +89,9 @@ function padZero(num) {
     return num
 }
 
-function getTimeString(timestamp) {
-     return timestamp.getHours() + ":" + timestamp.getMinutes() + ":" + timestamp.getSeconds()
-}
+// function getTimeString(timestamp) {
+//      return timestamp.getHours() + ":" + timestamp.getMinutes() + ":" + timestamp.getSeconds()
+// }
 
 function renderAllLogs() {
     var calories = getLocalStorage("calories");
